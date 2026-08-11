@@ -443,7 +443,7 @@ module main (
     wire alu_zero;
 
     reg alu_active;
-    always @(posedge Clk or posedge Rst) begin
+    always @(posedge Clk or posedge Rst) begin  
         if (Rst) alu_active <= 0;
         else if (Stall_ALU) alu_active <= 1;
         else alu_active <= 0;

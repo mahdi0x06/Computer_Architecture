@@ -1,0 +1,26 @@
+trace,scenario,architecture,requests,cycles,average_cycles,l1_hits,l1_misses,l1_hit_rate,victim_hits,victim_misses,victim_hit_rate,victim_swaps,l2_hits,l2_misses,l2_hit_rate,l2_reads,l2_writes,memory_accesses
+repeated,Repeated locality,memory,32,3200,100.000000,0,0,0.000000,0,0,0.000000,0,0,0,0.000000,0,0,32
+repeated,Repeated locality,l1,32,132,4.125000,31,1,0.968750,0,0,0.000000,0,0,0,0.000000,0,0,1
+repeated,Repeated locality,l1-l2,32,144,4.500000,31,1,0.968750,0,0,0.000000,0,0,1,0.000000,1,0,1
+repeated,Repeated locality,full-fifo,32,146,4.562500,31,1,0.968750,0,1,0.000000,0,0,1,0.000000,1,0,1
+repeated,Repeated locality,full-lru,32,146,4.562500,31,1,0.968750,0,1,0.000000,0,0,1,0.000000,1,0,1
+sequential,Sequential working set,memory,32,3200,100.000000,0,0,0.000000,0,0,0.000000,0,0,0,0.000000,0,0,32
+sequential,Sequential working set,l1,32,432,13.500000,28,4,0.875000,0,0,0.000000,0,0,0,0.000000,0,0,4
+sequential,Sequential working set,l1-l2,32,480,15.000000,28,4,0.875000,0,0,0.000000,0,0,4,0.000000,4,0,4
+sequential,Sequential working set,full-fifo,32,488,15.250000,28,4,0.875000,0,4,0.000000,0,0,4,0.000000,4,0,4
+sequential,Sequential working set,full-lru,32,488,15.250000,28,4,0.875000,0,4,0.000000,0,0,4,0.000000,4,0,4
+conflict,L1 conflict thrashing,memory,32,3200,100.000000,0,0,0.000000,0,0,0.000000,0,0,0,0.000000,0,0,32
+conflict,L1 conflict thrashing,l1,32,3232,101.000000,0,32,0.000000,0,0,0.000000,0,0,0,0.000000,0,0,32
+conflict,L1 conflict thrashing,l1-l2,32,816,25.500000,0,32,0.000000,0,0,0.000000,0,28,4,0.875000,32,0,4
+conflict,L1 conflict thrashing,full-fifo,32,544,17.000000,0,32,0.000000,28,4,0.875000,28,0,4,0.000000,4,0,4
+conflict,L1 conflict thrashing,full-lru,32,544,17.000000,0,32,0.000000,28,4,0.875000,28,0,4,0.000000,4,0,4
+mixed,Mixed hierarchy coverage,memory,36,3600,100.000000,0,0,0.000000,0,0,0.000000,0,0,0,0.000000,0,0,36
+mixed,Mixed hierarchy coverage,l1,36,2936,81.555556,7,29,0.194444,0,0,0.000000,0,0,0,0.000000,0,0,29
+mixed,Mixed hierarchy coverage,l1-l2,36,1884,52.333333,7,29,0.194444,0,0,0.000000,0,14,15,0.482759,29,0,15
+mixed,Mixed hierarchy coverage,full-fifo,36,1894,52.611111,7,29,0.194444,4,25,0.137931,4,10,15,0.400000,25,0,15
+mixed,Mixed hierarchy coverage,full-lru,36,1894,52.611111,7,29,0.194444,4,25,0.137931,4,10,15,0.400000,25,0,15
+writeback,Dirty writeback pressure,memory,10,1000,100.000000,0,0,0.000000,0,0,0.000000,0,0,0,0.000000,0,0,10
+writeback,Dirty writeback pressure,l1,10,1010,101.000000,0,10,0.000000,0,0,0.000000,0,0,0,0.000000,0,0,19
+writeback,Dirty writeback pressure,l1-l2,10,1130,113.000000,0,10,0.000000,0,0,0.000000,0,0,10,0.000000,10,2,12
+writeback,Dirty writeback pressure,full-fifo,10,1150,115.000000,0,10,0.000000,0,10,0.000000,0,0,10,0.000000,10,3,13
+writeback,Dirty writeback pressure,full-lru,10,1150,115.000000,0,10,0.000000,0,10,0.000000,0,0,10,0.000000,10,3,13

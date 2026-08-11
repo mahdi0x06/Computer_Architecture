@@ -1,0 +1,4 @@
+trace,scenario,architecture,requests,cycles,average_cycles,l1_hits,l1_misses,l1_hit_rate,victim_hits,victim_misses,victim_hit_rate,victim_swaps,l2_hits,l2_misses,l2_hit_rate,l2_reads,l2_writes,memory_accesses
+matrix-multiply,8x8 matrix multiplication,l1-l2,1088,6776,6.227941,714,374,0.656250,0,0,0.000000,0,362,12,0.967914,374,0,12
+matrix-multiply,8x8 matrix multiplication,full-fifo,1088,3180,2.922794,714,374,0.656250,362,12,0.967914,362,0,12,0.000000,12,0,12
+matrix-multiply,8x8 matrix multiplication,full-lru,1088,3180,2.922794,714,374,0.656250,362,12,0.967914,362,0,12,0.000000,12,0,12

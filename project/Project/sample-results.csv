@@ -1,0 +1,21 @@
+trace,scenario,architecture,requests,cycles,average_cycles,l1_hits,l1_misses,l1_hit_rate,victim_hits,victim_misses,victim_hit_rate,victim_swaps,l2_hits,l2_misses,l2_hit_rate,l2_reads,l2_writes,memory_accesses
+repeated,Repeated locality,memory,32,3200,100.000000,0,0,0.000000,0,0,0.000000,0,0,0,0.000000,0,0,32
+repeated,Repeated locality,l1,32,132,4.125000,31,1,0.968750,0,0,0.000000,0,0,0,0.000000,0,0,1
+repeated,Repeated locality,l1-l2,32,144,4.500000,31,1,0.968750,0,0,0.000000,0,0,1,0.000000,1,0,1
+repeated,Repeated locality,full-fifo,32,146,4.562500,31,1,0.968750,0,1,0.000000,0,0,1,0.000000,1,0,1
+repeated,Repeated locality,full-lru,32,146,4.562500,31,1,0.968750,0,1,0.000000,0,0,1,0.000000,1,0,1
+sequential,Sequential word stream,memory,32,3200,100.000000,0,0,0.000000,0,0,0.000000,0,0,0,0.000000,0,0,32
+sequential,Sequential word stream,l1,32,232,7.250000,30,2,0.937500,0,0,0.000000,0,0,0,0.000000,0,0,2
+sequential,Sequential word stream,l1-l2,32,256,8.000000,30,2,0.937500,0,0,0.000000,0,0,2,0.000000,2,0,2
+sequential,Sequential word stream,full-fifo,32,260,8.125000,30,2,0.937500,0,2,0.000000,0,0,2,0.000000,2,0,2
+sequential,Sequential word stream,full-lru,32,260,8.125000,30,2,0.937500,0,2,0.000000,0,0,2,0.000000,2,0,2
+conflict,L1 conflict thrashing,memory,32,3200,100.000000,0,0,0.000000,0,0,0.000000,0,0,0,0.000000,0,0,32
+conflict,L1 conflict thrashing,l1,32,3232,101.000000,0,32,0.000000,0,0,0.000000,0,0,0,0.000000,0,0,32
+conflict,L1 conflict thrashing,l1-l2,32,816,25.500000,0,32,0.000000,0,0,0.000000,0,28,4,0.875000,32,0,4
+conflict,L1 conflict thrashing,full-fifo,32,544,17.000000,0,32,0.000000,28,4,0.875000,28,0,4,0.000000,4,0,4
+conflict,L1 conflict thrashing,full-lru,32,544,17.000000,0,32,0.000000,28,4,0.875000,28,0,4,0.000000,4,0,4
+mixed,Mixed hierarchy coverage,memory,1312,131200,100.000000,0,0,0.000000,0,0,0.000000,0,0,0,0.000000,0,0,1312
+mixed,Mixed hierarchy coverage,l1,1312,65812,50.161585,667,645,0.508384,0,0,0.000000,0,0,0,0.000000,0,0,645
+mixed,Mixed hierarchy coverage,l1-l2,1312,11352,8.652439,667,645,0.508384,0,0,0.000000,0,622,23,0.964341,645,0,23
+mixed,Mixed hierarchy coverage,full-fifo,1312,11922,9.086890,667,645,0.508384,60,585,0.093023,60,562,23,0.960684,585,0,23
+mixed,Mixed hierarchy coverage,full-lru,1312,10386,7.916159,667,645,0.508384,188,457,0.291473,188,434,23,0.949672,457,0,23

@@ -1,0 +1,4 @@
+trace,scenario,architecture,requests,cycles,average_cycles,l1_hits,l1_misses,l1_hit_rate,victim_hits,victim_misses,victim_hit_rate,victim_swaps,l2_hits,l2_misses,l2_hit_rate,l2_reads,l2_writes,memory_accesses
+merge-sort,Merge sort of 16 elements,l1-l2,288,3212,11.152778,61,227,0.211806,0,0,0.000000,0,225,2,0.991189,227,0,2
+merge-sort,Merge sort of 16 elements,full-fifo,288,966,3.354167,61,227,0.211806,225,2,0.991189,225,0,2,0.000000,2,0,2
+merge-sort,Merge sort of 16 elements,full-lru,288,966,3.354167,61,227,0.211806,225,2,0.991189,225,0,2,0.000000,2,0,2
